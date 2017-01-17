@@ -1,0 +1,38 @@
+{
+  "name": "lawtonacademy",
+  "version": "1.0.0",
+  "description": "Code for the Lawton Academy of Arts & Sciences",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinisamaker/lawtonacademy.git"
+  },
+  "author": "Justin Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinisamaker/lawtonacademy.git/issues"
+  },
+  "homepage": "https://github.com/justinisamaker/lawtonacademy.git#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "susy": "^2.2.12"
+  }
+}

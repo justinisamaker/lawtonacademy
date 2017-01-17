@@ -16,3 +16,10 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+node_modules/
+
+wp-content/themes/lobo
+wp-content/themes/okie/dist/
+.DS_Store
+
+

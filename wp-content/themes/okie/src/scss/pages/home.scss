@@ -4,6 +4,231 @@
 
 @import "../main.scss";
 
+/* 
+   INTRO
+   ========================================================================== */
+
+#intro{
+  @include span(12);
+  margin-top:3em;
+  margin-bottom:1em;
+}
+
+/* 
+   SLIDESHOW
+   ========================================================================== */
+
+#slideshow{
+  @include span(12);
+  margin-bottom:3em;
+
+  .slideshow_container{
+    height:30em !important;
+
+    .slideshow_content, .slideshow_view{
+      height: 100% !important;
+    }
+  }
+
+  .slideshow_description_box{
+    position:absolute !important;
+    bottom:0 !important;
+    background:$blue2 !important;
+    opacity:1 !important;
+    padding-top:0.7em !important;
+    padding-bottom:0.7em !important;
+    padding-left:1em !important;
+    min-height:20px !important;
+  }
+
+  .slideshow_title, .slideshow_description{
+    text-align:left !important;
+    color:$blue5 !important;
+    font-size:1em !important;
+  }
+
+  .slideshow_pagination, .slideshow_pagination_center{
+    display:none !important;
+    position:absolute !important;
+    bottom:7px !important;
+    right:1em !important;
+  }
+}
+
+/* 
+   HOME ACTIONS
+   ========================================================================== */
+
+#home-actions{
+  @include span(12);
+  height:25em;
+  position:relative;
+  margin-bottom:3em;
+}
+
+#home-action-apply{
+  position:absolute;
+  bottom:0;
+  width:96%;
+}
+
+/* 
+   NEWS & EVENTS
+   ========================================================================== */
+
+#news-and-events{
+  @include span(12);
+  margin:0;
+  padding:0;
+}
+
+#upcoming-events{
+  @include span(12);
+  margin-bottom:3em;
+
+  li{
+    font-size:0.9em;
+    line-height:1.3em;
+    border-bottom:1px solid $lightGray;
+    margin-bottom:1em;
+    padding-bottom:1em;
+  }
+}
+
+#school-news{
+  @include span(12);
+
+  li{
+    @include span(12);
+    font-size:0.9em;
+    margin-bottom:1em;
+    height:20em;
+
+    .inner-container{
+      position:relative;
+      border:1px solid $lightGray;
+      width:90%;
+      height:90%;
+      padding:1em;
+      margin:0 auto;
+    }
+
+    img{
+      float:right;
+      margin-left:1em;
+    }
+  }
+}
+
+
+
+/* 
+   SCHOOL INFORMATION
+   ========================================================================== */
+
+#school-information{
+  @include span(12);
+  margin-top:3em;
+  padding:3em 0;
+  border:1px solid $lightGray;
+  border-width:1px 0;
+
+  .school-info{
+    @include span(12);
+
+    img{
+      width:100%;
+    }
+  }
+
+  .school-info:first-child{
+    @include push(0 of 24);
+  }
+
+}
+
+#featured-video{
+  iframe{
+    width:100%;
+  }
+}
+
+#elementary-handbook{
+  margin-bottom:0.5em;
+}
+
+#secondary-handbook, #triopinion{
+  margin-bottom:3em;
+}
+
+.handbook-link{
+  font-size:1em;
+}
+
+#triopinion, #sponsors{
+  img{
+    margin-bottom:1px;
+  }
+
+  a{
+    font-size:1em;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINTS
+   ========================================================================== */
+
+@include breakpoint($medium){
+  #intro{
+    margin-top:5em;
+    margin-bottom:2em;
+  }
+
+  #slideshow{
+    @include span(8);
+    margin-bottom:5em;
+
+    .slideshow_pagination, .slideshow_pagination_center{
+      display:block !important;
+    }
+  }
+
+  #home-actions{
+    @include span(7 of 24);
+    @include push(1 of 24);
+    height:30em;
+    margin-bottom:0;
+  }
+
+  #upcoming-events{
+    @include span(7 of 24); 
+    margin-bottom:0;
+  }
+
+  #school-news{
+    @include span(16 of 24);
+    @include push(1 of 24);
+
+    li{
+      @include span(6);
+    }
+  }
+
+  #school-information{
+    .school-info{
+      @include span(7 of 24);
+      @include push(1.5 of 24);
+    }
+  }
+
+  #secondary-handbook, #triopinion{
+    margin-bottom:0;
+  }
+}
+
+
+
 
 
 

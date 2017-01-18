@@ -6,8 +6,76 @@
 $source: 'Source Sans Pro', sans-serif;
 $play: 'Playfair Display', serif;
 
-
 // TYPOGRAPHY STANDARDS
 html, body{
-  font-family: Helvetica, Arial, sans-serif;;
+  font-family: $source;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:$play;
+  line-height:1.2em;
+  font-weight:400;
+  border-bottom:1px solid $blue5;
+}
+
+h1, h2, h3{
+  padding-bottom:0.3em;
+  margin-bottom:0.5em;
+}
+
+h4, h5, h6{
+  padding-bottom:0.3em;
+  margin-bottom:0.6em;
+}
+
+h1{
+  font-size:3em;
+}
+
+h2{
+  font-size:2em;
+}
+
+h3{
+  font-size:1.6em;
+}
+
+h4{
+  font-size:1.4em;
+}
+
+h5{
+  font-size:1.2em;
+}
+
+h6{
+  font-size:1em;
+}
+
+p{
+  line-height:1.5em;
+  margin-bottom:0.8em;
+  hyphens: auto;
+}
+
+em{
+  font-weight:700;
+}
+
+// LINKS
+a{
+  color:$black;
+  text-decoration:none;
+  padding-bottom:3px;
+  border-bottom:1px solid $blue5;
+
+  &:hover{
+    color:$black;
+    border-bottom-color:$blue5;
+  }
+
+  &.no-link-styles{
+    text-decoration:none;
+    border:none;
+  }
 }

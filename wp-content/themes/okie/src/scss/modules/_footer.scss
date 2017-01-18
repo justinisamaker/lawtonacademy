@@ -5,5 +5,21 @@
 #main-footer{
   margin-top:10em;
   @include span(12);
+  background:$blue2;
+
+  #footer-text{
+    @include span(10);
+    @include push(1);
+    padding-top:3em;
+    padding-bottom:5em;
+    font-size:0.7em;
+    color:$blue5;
+    text-align:center;
+    line-height:3em;
+  }
+}
+
+@include breakpoint($medium){
+
 }
 

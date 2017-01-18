@@ -29,3 +29,12 @@ $base-font-size: 14px;
 #body-container{
   @include container;
 }
+
+html, body{
+  background:$white;
+}
+
+#main-content{
+  @include span(10);
+  @include push(1);
+}

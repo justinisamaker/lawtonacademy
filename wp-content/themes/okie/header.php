@@ -11,10 +11,19 @@
 	<body>
 		<div id="body-container">
 
-			<!-- <header id="main-header">
+			<header id="main-header">
         <a id="site-logo" href="<?php bloginfo('url'); ?>" class="no-link-styles">
-          <img src="<?php bloginfo('template_directory'); ?>/dist/img/lost-arts-logo.svg" alt="Lost Arts Logo">
+          <img src="<?php bloginfo('template_directory'); ?>/dist/img/lawton-academy-logo.svg" alt="Lawton Academy Logo">
         </a>
-			</header> -->
 
-      <main>
+        <div id="accredidation">
+          <img src="<?php bloginfo('template_directory'); ?>/dist/img/advanced-accred-seal.png" alt="AdvancED Accredited SACS" id="advanced-accred-seal">
+          <img src="<?php bloginfo('template_directory'); ?>/dist/img/osf-seal.png" alt="Opportunity Scholarship Fund Oklahoma">
+        </div>
+
+        <nav id="main-nav">
+          <?php wp_nav_menu( array( 'theme_location' => 'main_menu', 'menu_class'      => 'header-menu' ) ); ?> 
+        </nav>
+			</header>
+
+      <main id="main-content">

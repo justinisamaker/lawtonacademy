@@ -1,0 +1,21 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.btn{
+  width:100%;
+  height:auto;
+  display:block;
+  border:1px solid $blue5;
+  text-align:center;
+  padding:1.5em 0;
+  font-family:$play;
+  font-size:1.4em;
+  transition:all 0.2s ease-in-out;
+
+  &:hover{
+    background:$blue5;
+    color:$white;
+    transition:all 0.2s ease-in-out;
+  }
+}

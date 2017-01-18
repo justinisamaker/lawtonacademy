@@ -3,7 +3,7 @@
 // Enqueue fonts
 function okie_fonts(){
   $query_args = array(
-    'family' => 'Source+Sans+Pro:400,600,400italic,600italic|Playfair+Display:400,700'
+    'family' => 'Source+Sans+Pro:400,600,400italic,600italic|Playfair+Display:400'
   );
 
   wp_register_style('okie_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );

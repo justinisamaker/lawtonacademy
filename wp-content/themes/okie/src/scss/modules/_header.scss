@@ -4,5 +4,108 @@
 
 #main-header{
   @include span(12);
+  background:$blue1;
+  padding-top:1.5em;
+  padding-bottom:1em;
+  border-bottom:3px solid $blue5;
+  position:relative;
 }
 
+#site-logo{
+  @include span(4);
+  @include push(4);
+
+  img{
+    width:100%;
+  }
+}
+
+#main-nav{
+  @include span(14 of 24);
+  @include push(7 of 24);
+  position:absolute;
+  bottom:20px;
+
+  .menu-item{
+    @include span(4 of 20);
+    font-family:$play;
+    float:right;
+    position:relative;
+    
+    a{
+      width:96%;
+      margin-left:2%;
+      display:block;
+      background:$white;
+      text-align:center;
+      padding-top:0.7em;
+      padding-bottom:0.7em;
+      transition:all 0.1s ease-in-out;
+
+      &:hover{
+        background:$blue5;
+        color:$white;
+        transition:all 0.1s ease-in-out;
+      }
+    }
+
+    &:hover{
+      .sub-menu{
+        display:block;
+      }
+    }
+  }
+
+  .sub-menu{
+    display:none;
+    position:absolute;
+    width:100%;
+    font-size:0.9em;
+    line-height:1.3em;
+
+    .menu-item{
+      float:none;
+      width:96%;
+
+      a{
+        background:$lightGray;
+
+        &:hover{
+          background:$blue5;
+          color:$white;
+        }
+      }
+    }
+  }
+}
+
+#accredidation{
+  display:none;
+  width:auto;
+  height:auto;
+  position:absolute;
+  top:0;
+  right:2em;
+
+  img{
+    width:100px;
+    height:auto;
+  }
+}
+
+#advanced-accred-seal{
+  position:relative;
+  margin-right:10px;
+  top:-8px;
+}
+
+@include breakpoint($medium){
+  #site-logo{
+    @include span(3 of 24);
+    @include push(1);
+  }
+
+  #accredidation{
+    display:block;
+  }
+}

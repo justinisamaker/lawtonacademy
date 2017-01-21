@@ -62,7 +62,7 @@
       <h4>Featured Video</h4>
       <?php the_field("featured_video");?>
 
-      <h4>School Handbooks</h4>
+      <h4 id="school-handbooks-header">School Handbooks</h4>
       <a href="<?php echo home_url(); ?>/elementary-school-handbook" id="elementary-handbook" class="btn handbook-link">Elementary Handbook</a>
       <a href="<?php echo home_url(); ?>/secondary-handbook" id="secondary-handbook" class="btn handbook-link">Secondary Handbook</a>
     </div>

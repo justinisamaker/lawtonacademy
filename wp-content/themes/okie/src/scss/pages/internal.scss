@@ -8,6 +8,7 @@
   @include span(22 of 24);
   @include push(1 of 24);
   padding-bottom:5em;
+  min-height:20em;
 
   header{
     h1{
@@ -129,7 +130,7 @@ table, .fixed-core-courses-1, .fixed-core-courses-2{
   }
 
   .internal-paragraph-right-picture{
-    
+
     .left{
       @include span(9);
     }

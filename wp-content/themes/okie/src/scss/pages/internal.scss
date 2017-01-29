@@ -1,0 +1,167 @@
+/* ==========================================================================
+   INTERNAL PAGES
+   ========================================================================== */
+
+@import "../main.scss";
+
+#internal-main{
+  @include span(22 of 24);
+  @include push(1 of 24);
+  padding-bottom:5em;
+
+  header{
+    h1{
+      margin-bottom:1em;
+    }
+  }
+
+  h3, h4, h5, h6{
+    font-family:$source;
+    font-weight:700;
+  }
+
+  h5, h6{
+    border-bottom:0;
+    margin:2em 0 0 0;
+    padding:0;
+  }
+
+  b{
+    font-weight:700;
+  }
+}
+
+.internal-paragraph-right-picture{
+  .left, .right{
+    @include span(12);
+  }
+
+  .right{
+    @include span(3);
+    margin-top:1em;
+  }
+}
+
+.internal-paragraph-left-picture{
+  .left{
+    @include span(3);
+    margin-top:1em;
+  }
+
+  .right, .left{
+    @include span(12);
+  }
+}
+
+.internal-row{
+  @include span(12);
+}
+
+table, .fixed-core-courses-1, .fixed-core-courses-2{
+
+  width:60%;
+  margin:1em 0 1em 0;
+  display:table;
+
+  thead td{
+    font-weight:600;
+    border-bottom:3px solid black;
+    font-size:1.2em;
+  }
+
+  td{
+    border:1px solid black;
+    padding:10px 30px 10px 10px;
+    width:33%;
+  }
+
+}
+
+/* ==========================================================================
+   SIDE MENU
+   ========================================================================== */
+
+#internal-side-menu{
+  display:none;
+  list-style-type:none;
+
+  li{
+    a{
+      font-size:1.2em;
+      color:$blue5;
+      margin-bottom:0.8em;
+      display:block;
+    }
+  }
+
+  li.page_item{
+    a{
+      border-bottom:0;
+      font-size:1em;
+      margin-bottom:0.4em;
+      line-height:1.3em;
+      color:$blue3;
+      font-weight:400;
+      transition:color 0.1s ease-in-out;
+
+      &:hover{
+        color:$blue5;
+        transition:color 0.1s ease-in-out;
+      }
+    }
+
+    &.current_page_item{
+      a{
+        color:$blue5;
+      }
+    }
+  }
+}
+
+/* 
+   MEDIUM BREAKPOINT
+   ========================================================================== */
+
+@include breakpoint($medium){
+  
+  #internal-main{
+    @include span(9);
+    @include push(1 of 24);
+    border-right:1px solid $blue2;
+    padding-right:3em;
+  }
+
+  #internal-side-menu{
+    display:block;
+    @include span(2);
+    @include push(0);
+    padding-left:3em;
+  }
+
+  .internal-paragraph-right-picture{
+    .left{
+      @include span(9);
+    }
+
+    .right{
+      @include span(3);
+      margin-top:4em;
+    }
+  }
+
+  .internal-paragraph-left-picture{
+    .left{
+      @include span(3);
+      margin-top:4em;
+    }
+
+    .right{
+      @include span(9);
+      padding-left:1em;
+    }
+  }
+
+}
+
+
+

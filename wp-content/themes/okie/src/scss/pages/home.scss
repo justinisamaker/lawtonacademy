@@ -10,7 +10,6 @@
 
 #intro{
   @include span(12);
-  margin-top:3em;
   margin-bottom:1em;
 }
 
@@ -213,7 +212,6 @@
 
 @include breakpoint($large){
   #intro{
-    margin-top:5em;
     margin-bottom:2em;
   }
 

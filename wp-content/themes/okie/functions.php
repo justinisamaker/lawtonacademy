@@ -18,6 +18,8 @@ function okie_styles() {
 
   if(is_front_page()){
     wp_enqueue_style( 'home-css', get_template_directory_uri(). '/dist/css/pages/home.css');
+  } else if (is_page_template('internal_page.php')){
+    wp_enqueue_style( 'internal-css', get_template_directory_uri(). '/dist/css/pages/internal.css');
   }
   // else if (is_singular('event')){
   //   wp_enqueue_style( 'single-event-css', get_template_directory_uri(). '/dist/css/pages/event-single.css');

@@ -23,7 +23,7 @@
     </div>
 
     <div id="home-action-apply" class="home-action">
-      <a href="/" class="btn">Apply now</a>
+      <a href="<?php bloginfo('url'); ?>/academics/admissions" class="btn">Apply now</a>
     </div>
   </div>
 

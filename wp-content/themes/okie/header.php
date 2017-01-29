@@ -26,4 +26,4 @@
         </nav>
 			</header>
 
-      <main id="main-content">
+      <div id="main-content">

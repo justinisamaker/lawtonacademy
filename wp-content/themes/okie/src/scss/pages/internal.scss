@@ -35,19 +35,9 @@
   .left, .right{
     @include span(12);
   }
-
-  .right{
-    @include span(3);
-    margin-top:1em;
-  }
 }
 
 .internal-paragraph-left-picture{
-  .left{
-    @include span(3);
-    margin-top:1em;
-  }
-
   .right, .left{
     @include span(12);
   }
@@ -139,6 +129,7 @@ table, .fixed-core-courses-1, .fixed-core-courses-2{
   }
 
   .internal-paragraph-right-picture{
+    
     .left{
       @include span(9);
     }

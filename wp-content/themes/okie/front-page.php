@@ -70,7 +70,7 @@
     <div id="triopinion" class="school-info">
       <h4>TriOpinion</h4>
       <img src="<?php bloginfo('template_directory'); ?>/dist/img/triopinion-logo.png" alt="TriOpinion Logo">
-      <p>TriOpinion is a three-generation blog hosted by Mrs. Johnson, Mrs. Smith, and her daughter Bria (a LAAS graduate).  Topics are updated on Sundays and always pertain to some aspect of being/raising gifted kids.  This week's topic: Opportunities.</p>
+      <p>TriOpinion is a three-generation blog hosted by Mrs. Johnson, Mrs. Smith, and her daughter Bria (a LAAS graduate).  Topics are updated on Sundays and always pertain to some aspect of being/raising gifted kids.  This week's topic: <?php the_field("triopinion_topic"); ?>.</p>
       <a href="http://www.triopinion.com/blog?ref=lawtonacademy" target="_new" class="btn">Visit TriOpinion.com</a>
     </div>
 

@@ -17,8 +17,12 @@
         </a>
 
         <div id="accredidation">
-          <img src="<?php bloginfo('template_directory'); ?>/dist/img/advanced-accred-seal.png" alt="AdvancED Accredited SACS" id="advanced-accred-seal">
-          <img src="<?php bloginfo('template_directory'); ?>/dist/img/osf-seal.png" alt="Opportunity Scholarship Fund Oklahoma">
+          <a href="http://www.advanc-ed.org/" target="_new">
+            <img src="<?php bloginfo('template_directory'); ?>/dist/img/advanced-accred-seal.png" alt="AdvancED Accredited SACS" id="advanced-accred-seal">
+          </a>
+          <a href="http://osfkids.org/" target="_blank">
+            <img src="<?php bloginfo('template_directory'); ?>/dist/img/osf-seal.png" alt="Opportunity Scholarship Fund Oklahoma">
+          </a>
         </div>
 
         <nav id="main-nav">
